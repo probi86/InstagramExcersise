@@ -76,7 +76,7 @@ class InstagramRecentsViewController: UIViewController {
                         self?.loadingLabel.isHidden = false
                     }
                 } else {
-                    if self?.viewModel?.user?.media.mediaItems.count == 0 {
+                    if self?.viewModel?.user == nil || self?.viewModel?.user?.media.mediaItems.count == 0 {
                         self?.errorLabel.text = self?.viewModel?.loadError?.localizedDescription
                     }
                     self?.refreshControl.endRefreshing()

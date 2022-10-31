@@ -25,8 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let instagramCoordinator = InstagramCoordinator(
             navigationController: navigationController,
             dataPersistingProvider: UserDefaultsInstagramDataPersistingProvider(),
-//            apiServiceProvider: URLSessionInstagramAPIProvider(accessToken: "IGQVJVRnBaa0NKRmQ4MUlQcjY5TzE3VWlrSmdzTWlQOFhLMHgtcEVxYVFraWF0TzB5bUhjOFFJRHJlLVlUYkF6WXpwcXZApcENyRDI3QWJRX3pXdlVEU3lHc3YzV1dhYmxtN19MLS1jLXBmNjYtUE1hWAZDZD")
-            apiServiceProvider: URLSessionInstagramAPIProvider(accessToken: "IGQVJXRTJsZAzg0ejBWTWtnWFM4Sm8xR0h0bVVwemVnNHNDZA2loaTZAiSTA4YlUtemV6Wm9Xb0dnZA0xKanZAZATFVKRlNHRWRYZAzhfOWIzYmMwd0ZADSG9nZAm80TlAtckpXaUVWQlhUZAkREUEJ0XzFsV2ZAvTwZDZD")
+            apiServiceProvider: URLSessionInstagramAPIProvider(accessToken: "IGQVJVRnBaa0NKRmQ4MUlQcjY5TzE3VWlrSmdzTWlQOFhLMHgtcEVxYVFraWF0TzB5bUhjOFFJRHJlLVlUYkF6WXpwcXZApcENyRDI3QWJRX3pXdlVEU3lHc3YzV1dhYmxtN19MLS1jLXBmNjYtUE1hWAZDZD")
+//            apiServiceProvider: URLSessionInstagramAPIProvider(accessToken: "IGQVJXRTJsZAzg0ejBWTWtnWFM4Sm8xR0h0bVVwemVnNHNDZA2loaTZAiSTA4YlUtemV6Wm9Xb0dnZA0xKanZAZATFVKRlNHRWRYZAzhfOWIzYmMwd0ZADSG9nZAm80TlAtckpXaUVWQlhUZAkREUEJ0XzFsV2ZAvTwZDZD")
             
             
         )

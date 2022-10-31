@@ -99,6 +99,7 @@ class InstagramRecentsViewModel {
                 
             } catch {
                 print("Failed to load next page")
+                user?.media.paging = nil
             }
             
             isLoadingNextPage = false
