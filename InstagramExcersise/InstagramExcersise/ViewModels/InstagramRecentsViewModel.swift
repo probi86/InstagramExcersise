@@ -72,7 +72,11 @@ class InstagramRecentsViewModel {
     
     func itemTapped(item: InstagramMediaItem) {
         if let urlString = item.mediaURLString {
-            coordinator.showImagePreviewFor(urlString: urlString)
+            if item.mediaType == "IMAGE" || (item.mediaType == nil && item.thumbnailUrlString == nil) {
+                coordinator.showImagePreviewFor(urlString: urlString)
+            } else {
+                coordinator.showVideoPlayerFor(urlString: urlString)
+            }
         }
     }
     

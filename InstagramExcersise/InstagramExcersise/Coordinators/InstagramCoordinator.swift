@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class InstagramCoordinator: Coordinator {
     
@@ -57,6 +58,18 @@ class InstagramCoordinator: Coordinator {
         let navController = UINavigationController(rootViewController: imagePreviewViewController)
         navController.modalPresentationStyle = .fullScreen
         self.navigationController.present(navController, animated: true)
+    }
+    
+    func showVideoPlayerFor(urlString: String) {
+        if let url = URL(string: urlString) {
+            let player = AVPlayer(url: url)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            
+            navigationController.present(playerViewController, animated: true) {
+                player.play()
+            }
+        }
     }
     
 }

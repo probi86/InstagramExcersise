@@ -111,7 +111,9 @@ extension InstagramItemTableViewCell: UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let item = instagramMediaItem {
+        if let childItems = instagramMediaItem?.children?.mediaItems {
+            delegate?.instagramItemTableViewCellItemTapped(childItems[indexPath.row])
+        } else if let item = instagramMediaItem {
             delegate?.instagramItemTableViewCellItemTapped(item)
         }
     }
