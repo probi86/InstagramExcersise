@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		13107D6C290A8B6500FAF500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D6B290A8B6500FAF500 /* AppDelegate.swift */; };
 		13107D6E290A8B6500FAF500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D6D290A8B6500FAF500 /* SceneDelegate.swift */; };
-		13107D70290A8B6500FAF500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D6F290A8B6500FAF500 /* ViewController.swift */; };
 		13107D83290A8B6700FAF500 /* InstagramExcersiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D82290A8B6700FAF500 /* InstagramExcersiseTests.swift */; };
 		13107D8D290A8B6700FAF500 /* InstagramExcersiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D8C290A8B6700FAF500 /* InstagramExcersiseUITests.swift */; };
 		13107D8F290A8B6700FAF500 /* InstagramExcersiseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13107D8E290A8B6700FAF500 /* InstagramExcersiseUITestsLaunchTests.swift */; };
@@ -59,7 +58,6 @@
 		13107D68290A8B6500FAF500 /* InstagramExcersise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramExcersise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13107D6B290A8B6500FAF500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13107D6D290A8B6500FAF500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13107D6F290A8B6500FAF500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13107D79290A8B6700FAF500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13107D7E290A8B6700FAF500 /* InstagramExcersiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramExcersiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13107D82290A8B6700FAF500 /* InstagramExcersiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramExcersiseTests.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			children = (
 				13107D6B290A8B6500FAF500 /* AppDelegate.swift */,
 				13107D6D290A8B6500FAF500 /* SceneDelegate.swift */,
-				13107D6F290A8B6500FAF500 /* ViewController.swift */,
 				13107DD4290F163200FAF500 /* Constants */,
 				13107DCC290BB01700FAF500 /* Extensions */,
 				13107DA4290A8C8A00FAF500 /* Coordinators */,
@@ -469,7 +466,6 @@
 				13107DC1290AA4C100FAF500 /* InstagramUser.swift in Sources */,
 				13107DA6290A8C9D00FAF500 /* Coordinator.swift in Sources */,
 				13107DBA290A8F2C00FAF500 /* URLSessionInstagramAPIProvider.swift in Sources */,
-				13107D70290A8B6500FAF500 /* ViewController.swift in Sources */,
 				13107DBC290A8F5D00FAF500 /* InstagramDataPersistingProviding.swift in Sources */,
 				13107D6C290A8B6500FAF500 /* AppDelegate.swift in Sources */,
 				13107DC5290B97D600FAF500 /* InstagramMediaItem.swift in Sources */,

@@ -14,7 +14,18 @@ class InstagramCoordinator: Coordinator {
     
     var dataPersistingProvider: InstagramDataPersistingProviding
     var apiServiceProvider: InstagramAPIServiceProviding
-    static var dateFormatter = DateFormatter()
+    
+    //MARK: - Lifecycle
+    
+    init(
+        navigationController: UINavigationController,
+        dataPersistingProvider: InstagramDataPersistingProviding,
+        apiServiceProvider: InstagramAPIServiceProviding
+    ) {
+        self.navigationController = navigationController
+        self.dataPersistingProvider = dataPersistingProvider
+        self.apiServiceProvider = apiServiceProvider
+    }
     
     //MARK: - Coordinator
     
@@ -36,18 +47,6 @@ class InstagramCoordinator: Coordinator {
         instagramRecentsViewController.viewModel = viewModel
         
         navigationController.setViewControllers([instagramRecentsViewController], animated: false)
-    }
-    
-    //MARK: - Lifecycle
-    
-    init(
-        navigationController: UINavigationController,
-        dataPersistingProvider: InstagramDataPersistingProviding,
-        apiServiceProvider: InstagramAPIServiceProviding
-    ) {
-        self.navigationController = navigationController
-        self.dataPersistingProvider = dataPersistingProvider
-        self.apiServiceProvider = apiServiceProvider
     }
     
     //MARK: - Public

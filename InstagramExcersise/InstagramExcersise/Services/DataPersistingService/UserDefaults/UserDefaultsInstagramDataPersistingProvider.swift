@@ -27,6 +27,7 @@ class UserDefaultsInstagramDataPersistingProvider: InstagramDataPersistingProvid
         do {
             let data = try JSONEncoder().encode(user)
             userDefaults.set(data, forKey: userKey)
+            userDefaults.synchronize()
         } catch {
             print("Failed to store user in user defaults: \(userDefaults)")
         }
